@@ -1,0 +1,33 @@
+
+.form-container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px cyan;
+    width: 300px;
+}
+label, input, select {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    color: rgb(4, 0, 255);
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid cyan;
+    outline: none;
+    font-size: 16px;
+    padding: 5px;
+}
+button {
+    background: cyan;
+    color: black;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+    background: darkcyan;
+}
