@@ -12,11 +12,5 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent {
   title = 'angularcuatro';
 
-  // Creación del FormGroup
-  form = new FormGroup({
-    description: new FormControl(''),
-    sex: new FormControl(false),
-    state: new FormControl(false),
-    ageGroupUuid: new FormControl('')
-  });
+ 
 }

@@ -1,0 +1,18 @@
+<div class="form-container">
+    <form [formGroup]="doctorForm" (ngSubmit)="submitForm()">
+        <label for="specialtyUuid">SPECIALITY UUID</label>
+        <input type="text" id="specialtyUuid" formControlName="specialtyUuid" required>
+        <label for="license">LICENSE</label>
+        <input type="text" id="license" formControlName="license" required>
+
+        <label for="state">STATE</label>
+        <input type="checkbox" id="state" formControlName="state">
+
+        <button type="submit">Enviar</button>
+    </form>
+</div>
+
+
+<hr>
+<h2>Valores</h2>
+<pre>{{ doctorForm.value | json }}</pre>

@@ -1,0 +1,30 @@
+<div class="form-container">
+    <form [formGroup]="medicalForm" (ngSubmit)="submitForm()">
+      <label for="scheduledFor">programado para: </label>
+      <input type="datetime-local" id="scheduledFor" formControlName="scheduledFor">
+    
+      <label for="reason">reason: </label>
+      <input type="text" id="reason" formControlName="reason" required>
+
+      <label for="stateAppointmentUuid">stateAppointment: </label>
+      <input type="text" id="stateAppointmentUuid" formControlName="stateAppointmentUuid" required>
+
+      <label for="doctorUuid">doctor:</label>
+      <input type="text" id="doctorUuid" formControlName="doctorUuid" required> 
+
+      <label for="assistant">assistant:</label>
+      <input type="text" id="assistant" formControlName="assistant" required> 
+    
+      <label for="state">Estado:</label>
+      <input type="checkbox" id="state" formControlName="state">
+    
+     
+    
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+  
+  <hr>
+  <h2>Valores</h2>
+  <pre>{{ medicalForm.value | json }}</pre>
+  

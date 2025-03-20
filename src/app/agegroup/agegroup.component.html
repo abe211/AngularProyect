@@ -1,0 +1,17 @@
+<div class="form-container">
+    <form [formGroup]="agegroupForm" (ngSubmit)="submitForm()">
+        <label for="description"> DESCRIPCION</label>
+        <input type="text" id="description" formControlName="description" required>
+
+        <label for="status">ESTADO</label>
+        <input type="checkbox" id="state" formControlName="state">
+        <button type="submit">Enviar</button>
+
+
+    </form>
+</div>
+
+
+<hr>
+<h2>Valores</h2>
+<pre>{{ agegroupForm.value | json }}</pre>

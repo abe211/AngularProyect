@@ -1,0 +1,17 @@
+<div class="form-container">
+    <form [formGroup]="stateAppointmentContainer" (ngSubmit)="submitForm()">
+
+        <label for="description">description</label>
+        <input type="text" id="description" formControlName="description" required>
+
+        <label for="state">state</label>
+        <input type="checkbox" id="state"formControlName="state">
+
+        <button type="submit">Enviar</button>
+
+    </form>
+</div>
+
+<hr>
+<h2>Valores</h2>
+<pre>{{ stateAppointmentContainer.value | json }}</pre>
